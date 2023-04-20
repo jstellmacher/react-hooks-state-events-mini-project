@@ -5,11 +5,11 @@ import { useState } from "react";
 function NewTaskForm({ onTaskFormSubmit }) {
   const [category, setCat] = useState("Food");
   const [inputVal, setInputVal] = useState("");
-
+//?--------------gotta make my useStates------------------------?
   const changeOption = (e) => {
     setCat(e.target.value);
   };
-
+//?----------------------uhhhhhh try to understand this better------------------------?
   const formSubmitter = (e) => {
     e.preventDefault();
     const object = {
@@ -18,11 +18,11 @@ function NewTaskForm({ onTaskFormSubmit }) {
     };
     onTaskFormSubmit(object);
   };
-
+//?-------------uhhhhhhhh try to understand this better---------?
   const changeInput = (e) => {
     setInputVal(e.target.value);
   };
-
+//?---------------uhhhhhhhhh----------------?
   return (
     <form className="new-task-form" onSubmit={formSubmitter}>
       <label>
